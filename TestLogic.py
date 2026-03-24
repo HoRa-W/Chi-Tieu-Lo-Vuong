@@ -1,10 +1,13 @@
 import pandas as pd
+import numpy as np
 
 def ConvertToMoney(input) -> int:
     # input at here, type is string
     # This function will be use in case the paragram has "k" in their words
     # It means before "k" must be <10000 (max lenght only 4)
     try:
+        #Make a clear translate
+        input.translate
         # Create a variable used to check input is number 10000 or 10k to distingush it
         check = input.split(" ")
 
