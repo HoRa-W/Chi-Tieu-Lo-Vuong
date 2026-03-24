@@ -9,3 +9,11 @@ i will have a aleart cautions me focus on what i'm doing with my money. So i bui
 Dream it, you can built it. 
 
  --Cities Skyline 2--
+
+Clone it
+
+    git clone https://github.com/HoRa-W/Chi-Tieu-Lo-Vuong.git
+Remote
+
+    git init
+    git remote add master https://github.com/HoRa-W/Chi-Tieu-Lo-Vuong.git
