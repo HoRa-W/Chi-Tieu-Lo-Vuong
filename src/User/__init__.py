@@ -4,13 +4,5 @@ class User:
         self.fullName = fullName #String
         self.walletID = walletID #int
 
-    def set_ID_user(self, setID):
-        self.userID = setID
-    
-    def set_fullName(self, setName):
-        self.fullName = setName
-    
-    def set_walletID(self, setWalled_ID):
-        self.walletID = setWalled_ID
     
     

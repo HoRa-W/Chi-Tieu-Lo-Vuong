@@ -51,8 +51,8 @@ def ConvertToMoney(input) -> int:
     except ValueError:
          print("Oops!  That was no valid value.  Try again...")
 
-#   This function use to summarize the goods
-def ManageThings(nameFile = "H:\lamqualo\ChiTieuLoVuong\Test.txt"):
+#   This function use to summarize the price
+def SumMoney(nameFile = "H:\lamqualo\ChiTieuLoVuong\Test.txt"):
     sum = 0 # Remember to put sum inside function because interpretor maybe forgot it (i don't know) 
     with open(nameFile, encoding="utf-8") as f:
         for content in f:
@@ -60,4 +60,4 @@ def ManageThings(nameFile = "H:\lamqualo\ChiTieuLoVuong\Test.txt"):
             sum += ConvertToMoney(content)
         print(sum)
 
-ManageThings()
+#   Need to find a solution for find out money for ones
