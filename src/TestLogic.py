@@ -52,12 +52,16 @@ def ConvertToMoney(input) -> int:
          print("Oops!  That was no valid value.  Try again...")
 
 #   This function use to summarize the price
-def SumMoney(nameFile = "H:\lamqualo\ChiTieuLoVuong\Test.txt"):
-    sum = 0 # Remember to put sum inside function because interpretor maybe forgot it (i don't know) 
-    with open(nameFile, encoding="utf-8") as f:
-        for content in f:
-            content = xoa_dau(content)
-            sum += ConvertToMoney(content)
-        print(sum)
+def SumMoney(nameFile = "H:\lamqualo\ChiTieuLoVuong\src\Test.txt"):
+    try:
+        sum = 0 # Remember to put sum inside function because interpretor maybe forgot it (i don't know) 
+        with open(nameFile, encoding="utf-8") as f:
+            for content in f:
+                content = xoa_dau(content)
+                sum += ConvertToMoney(content)
+            print(sum)
+    except ValueError as e:
+        print(f"Value is error: {e}")
 
 #   Need to find a solution for find out money for ones
+SumMoney("H:\lamqualo\ChiTieuLoVuong\Test.txt")
