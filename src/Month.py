@@ -34,13 +34,5 @@ class Month():
             return 0
     
     def printInfo(self):
-        print("Thong bao chi tieu cua", self.myName)
         for i in range(12):
             print(f"Thang {i + 1}: ", self.TongCT[i])
-
-ok = Month()
-ok.setTien(123, 1)
-ok.setTien(432, 5)
-ok.setTien(2222, 9)
-ok.setTien(23, 12)
-ok.printInfo()
