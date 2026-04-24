@@ -1,0 +1,13 @@
+Nhác nhở ngày 25/4/2026 1 am
+
+Tên thư viện Month -> MyBackup
+
+Lúc này tôi cần phải xây dựng chương trình dựa trên trang interface, ý tưởng chính là tạo mới 1 user
+rồi từ user -> MyBackup -> Wallet
+
+Giải thích cách viết như sau
+MyBackup chính là file tôi dùng để lưu trữ các con số chi phí qua đó đây sẽ là nơi lưu trữ lớn nhất (Ngoại trừ các file txt)
+Tôi cần tìm hướng đưa User kết nối với file MyBackup với kết nối là 1 - 1 (Tác hại của lười làm doc đây)
+Những vấn đề khác kế tiếp sẽ thực thi sau
+
+Đồng thời tôi thấy rằng mình cần phải xây dựng doc càng sớm càng tốt bởi vì làm ứ hiểu cái gì hết để mà build

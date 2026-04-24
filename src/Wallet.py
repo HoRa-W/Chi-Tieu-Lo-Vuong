@@ -2,9 +2,16 @@ import numpy as np
 from User import *
 
 class Wallet:
-    def __init__(self,userID, fullName, walletID, ListChiPhi, Sodu = 0):
-        self.userID = User(userID, fullName, walletID)
+    def __init__(self, walletID, Sodu):
         self.IDWallet = walletID
-        self.ListChiPhi = ListChiPhi
         self.Sodu = Sodu
+
+    def getIDWallet(self):
+        return self.IDWallet
+    
+    def getSodu(self):
+        return self.Sodu
+    
+    def setSodu(self, newSodu):
+        self.Sodu = newSodu
     

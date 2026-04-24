@@ -1,10 +1,12 @@
 import numpy as np
+import Wallet as wl
 
-class Month():
-    def __init__(self,FullName, ListThang = np.arange(1, 13), ListTien = np.zeros(12)):
+class MyBackup():
+    # Save information by month, each month has each wallet
+    def __init__(self, FullName, ListThang = np.arange(1, 13)):
         self.myName = FullName
         self.myMonth = ListThang
-        self.TongCT = ListTien # TongCT = Tong Chi tieu
+        self.ListTien = np.array([]) # TongCT = Tong Chi tieu
     
     def DieuKienNhap(self, input) -> bool:
         try:
@@ -21,6 +23,7 @@ class Month():
 
     def setTien(self, Money, Month):
         Month -= 1
+        self.resetMoneyMonth(Month)
         if(self.DieuKienNhap(Month)):
             self.TongCT[Month] += Money
         else:
@@ -36,3 +39,11 @@ class Month():
     def printInfo(self):
         for i in range(12):
             print(f"Thang {i + 1}: ", self.TongCT[i])
+
+    def resetMoneyMonth(self, Month):
+        # Lenh nay duoc viet ra nham truong hop bi loi chuong trinh
+        # VD cac truong hop nhu Money dang 3000 nhung loi thuat toan thi se reset lai
+        Month -= 1
+        if(self.DieuKienNhap(Month)):
+            self.TongCT[Month] = 0
+

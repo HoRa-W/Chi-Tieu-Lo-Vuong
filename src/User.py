@@ -1,5 +1,5 @@
 import numpy as np
-from Month import *
+from MyBackup import *
 import Wallet as wl
 
 class User:
@@ -7,12 +7,14 @@ class User:
         self.userID = userID #int
         self.fullName = fullName #String
         self.myWallet = wl.Wallet(walletID, np.array([]), 0)
-        self.TimeLine = Month(fullName)
+        self.TimeLine = MyBackup(fullName)
     
     def printUser(self):
         print("Hello", self.fullName)
         print("Here is your TimeLine")
         self.TimeLine.printInfo()
+    
+    
 
 
 
